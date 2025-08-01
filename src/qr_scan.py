@@ -11,7 +11,7 @@ while (cap.isOpened()):
     ret, img = cap.read()
     if not ret:
         continue
-    img = cv2.imread('../img/frame.png')
+    
     # 스캔 이미지 그레이 스케일
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
