@@ -17,7 +17,7 @@ for d in decoded:
     print(d.data.decode('utf-8'))
     print(d.type)
 
-cv2.rectangle(img, (d.rect[0], d.rect[1]), (d.rect[0] + d.rect[2], d.rect[1] + d.rect[3]), (0, 255, 0), 2)
+cv2.rectangle(img, (d.rect[0], d.rect[1]), (d.rect[0] + d.rect[2], d.rect[1] + d.rect[3]), (0, 255, 0), 20)
 
 plt.imshow(img)
 plt.show()
